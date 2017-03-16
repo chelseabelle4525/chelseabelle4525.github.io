@@ -1,0 +1,60 @@
+.header {
+	text-align: center;
+}
+h1 {
+	font-family: 'Pacifico', cursive;
+	text-align: center;
+	color:#FC3CAD;
+	font-size: 50px;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+h2 {
+	text-align: center;
+	font-family: 'Dawning of a New Day', cursive;
+	margin-top: 0;
+	font-size: 30px;
+}
+
+.bOc {
+	width: 201px;
+	height: 320px;
+	/*padding-left: 42%;*/
+	/*padding-right: 40%;*/
+
+}
+.pPf {
+	font-family: 'Pacifico', cursive;
+	font-size: 25px; 
+	text-align: center;
+	word-spacing: 7em;
+	color:#4430BA;
+
+}
+#tense {
+	margin-bottom: 0; 
+}
+
+.dealtCards {
+	width: 900px;
+	height: 900px;
+	margin: 0 auto;
+}
+.past {
+	width:276px;
+	float: left;
+	padding-left: 32px;
+}
+.present {
+	 width: 276px;
+    height: 844px; 
+    float: left; 
+}
+.future {
+	 width: 290px;
+    height: 844px; 
+    float: left; 
+}
+
+
+
