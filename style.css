@@ -15,6 +15,11 @@ h2 {
 	margin-top: 0;
 	font-size: 30px;
 }
+.header,button {
+	padding: 0;
+    border: none;
+    background: none;
+}
 
 .bOc {
 	width: 201px;
@@ -40,6 +45,7 @@ h2 {
 }
 .past {
 	width:276px;
+	height: 844px;
 	float: left;
 	padding-left: 32px;
 }
@@ -49,7 +55,7 @@ h2 {
     float: left; 
 }
 .future {
-	 width: 290px;
+	 width: 276px;
     height: 844px; 
     float: left; 
 }
