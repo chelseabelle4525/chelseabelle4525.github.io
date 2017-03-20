@@ -51,7 +51,7 @@ h2 {
 }
 .present {
 	 width: 276px;
-    height: 1000px; 
+    height: 1200px; 
     float: left; 
 }
 .future {
@@ -63,12 +63,16 @@ h2 {
 footer {
 	margin-top: 30px;
 }
+
 a {
 	text-align: center;
 	font-size: 30px;
 	font-family: 'Pacifico', cursive;
 	margin-left: 600px;
-	padding-top: 30px;
+	text-decoration: none;
+	border: solid;
+	border-radius: 30px;
+	border-color: #d3d3d3;
 }
 
 
