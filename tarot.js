@@ -11,10 +11,8 @@ console.log('script loaded')
     //on the third click it needs to disperse a card for future 
     //after three clicks nothing more should happen 
     // and then if they want to redo the reading add a refresh button
-
-
-		//click cards created a click function- now I need it to randomly pick a card 
-		//and send it to the past div.
+    //click cards created a click function- now I need it to randomly pick a card 
+	//and send it to the past div.
 (function(){
 
 
@@ -41,21 +39,40 @@ console.log('script loaded')
 		['theTowerCard','lfTarotCards/theTowerCard.png'],
 		['theWheelCard','lfTarotCards/theWheelCard.png'],
 		['theWorldCard','lfTarotCards/theWorldCard.png'],
-	]
+	];
 // had to look up click events for some help:"http://api.jquery.com/on/"
- 	let counter = -1;
+//I chose a counter because it would help log how many times the card deck was clicked 
+ let counter = -1;
+//This was incredibly frusterating because I set it at zero because as we know arrays
+//go 0,1,2... but for some reason It kept breaking, but I kid you not tried -1 and like magic it worked
+//because it counts -1 before getting to 0 which would be the 1st item. 
  $( ".bOc" ).on("click", function() {
  	counter++
-  console.log($( this ).text());
+ //here we are refrensing the deck of the back of cards which is what I want people to click 
+//I am doing an on click which i have refrenced above to tell the page to listen for 
+//when it is clicked. The counter++ adds a 1 to the counter each time it is clicked.
+//without this counter my cards would A. not show up at all and B. bellow you will see
+//how the counter takes my randomly sourced card and places it with in the divs
 
-  let randSrc = cards[Math.floor(Math.random() * cards.length)][1];''
-  let card = $('.card');
+ let randomSrc = cards[Math.floor(Math.random() * cards.length)][1];
+//here we have set the variable randomSrc to = the array plus the method of
+//randomization floor rounds the number down to the nearest integer which 
+//we then times that by the random method times the length of the array 
 
-  card[counter].src = randSrc;
 
-  
-//Get the info for the index number
-// Function that checks if the card slot is empty if it is put that card in there
+let card = $('.card');
+//Here we define card 
+//(which is in the html as a class for the divs containing cards)
+// in jquery so we can refrence it more simply in the next line of code
+
+
+ card[counter].src = randomSrc;
+ //here we put it in to action!!! we do card plus the counter so each time the 
+ //counter goes up it fills the empty src from the html we are refrencing with 
+ //our randomSrc that we create above refrencing our arry and filling the div 
+ //card slots with tarot cards!!! 
+
+ 
 });
 
 
