@@ -1,4 +1,4 @@
-console.log('script loaded')
+	console.log('script loaded')
 "use strict";
 	
     // -------------------------------------------------------------
